@@ -1,0 +1,88 @@
+body {
+  background: #eedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+h1{
+  margin-right: 40px;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f2cdcd82;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.center-dot {
+  width: 12px;
+  height: 12px;
+  background: #b6b1b1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+}
+
+.hour {
+  width: 6px;
+  height: 70px;
+  background: #333;
+  z-index: 3;
+}
+
+.minute {
+  width: 4px;
+  height: 100px;
+  background: #555;
+  z-index: 2;
+}
+
+.second {
+  width: 2px;
+  height: 120px;
+  background: red;
+  z-index: 1;
+}
+
+/* Clock Numbers */
+.number {
+  position: absolute;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.number1  { top: 20%;  left: 75%; }
+.number2  { top: 32%;  left: 88%; }
+.number3  { top: 50%;  left: 95%; }
+.number4  { top: 68%;  left: 88%; }
+.number5  { top: 80%;  left: 75%; }
+.number6  { top: 87%;  left: 50%; }
+.number7  { top: 80%;  left: 25%; }
+.number8  { top: 68%;  left: 12%; }
+.number9  { top: 50%;  left: 5%;  }
+.number10 { top: 32%;  left: 12%; }
+.number11 { top: 20%;  left: 25%; }
+.number12 { top: 13%;  left: 50%; }
